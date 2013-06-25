@@ -25,21 +25,24 @@
 <body>
 	<div data-role="page" data-theme="a">
 		<div data-role="content">	
-        	<!--show thanks page after form submitted-->
-			
 			<div id="projectinfo" data-role="fieldcontain">
-            <fieldset>
-				<legend><h3 id="formtitle">YOUR PROJECT ADDED</h3></legend>
+        		<fieldset>
+        		<!--show thanks page after form submitted-->
+        		<form action="file:///android_asset/thanks.html" method="post" name="addprojectform" id="addprojectform">
+
+				<legend><h3 id="formtitle">YOUR PROJECT WAS ADDED.</h3></legend>
                 
 				<div data-role="fieldcontain">
-                Your amazing project was added to our Parse.com Database.  Stay Awesome!
-				 </div><!-- /fieldcontain -->
+					The awesomeness of your project was added to our Parse.com database. <br />
+					<img src="@drawable/home" /> View all your Projects and Details on the Home screen of this mobile app.
+                </div><!-- /fieldcontain-->
+        	</form>
 			</fieldset>
-			
-		</div><!-- /fieldcontain-->
+		</div><!-- /projectinfo /fieldcontain-->
 	</div><!-- /content -->
 </div><!-- /page -->
-    <!--jquery and jquery mobile-->
+
+<!--jquery and jquery mobile-->
 	<!--note that order of js is important below-->
     <script type="text/javascript" charset="utf-8" src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
     <script type="text/javascript" charset="utf-8" src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
