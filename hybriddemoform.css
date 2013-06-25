@@ -7,7 +7,7 @@
 */
 
 /*
-  project type icons are 35 x 35
+	project type icons are 35 x 35
 	project screenshots are 75 x 75
 	Vertical Stack Design Concept
 	with JQuery Mobile
@@ -230,6 +230,12 @@ button#submit {
 /* stop forms */
 
 /* CUSTOM JQM */
+
+.ui-mobile-viewport .ui-overlay-a .ui-page .ui-body-a .ui-page-active .ui-content .ui-field-contain .ui-body .ui-br {
+	background-color: #6A4A3C;
+	color: #EB6841;
+	font-family: Verdana, Trebuchet, Arial;
+}
 
 .ui-mobile-viewport .ui-overlay-b .ui-page .ui-body-b .ui-page-active .ui-content .ui-field-contain .ui-body .ui-br {
 	background-color: #6A4A3C;
