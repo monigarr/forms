@@ -231,13 +231,13 @@ button#submit {
 
 /* CUSTOM JQM */
 
-.ui-mobile-viewport-a .ui-overlay-a .ui-page-a .ui-body-a .ui-page-active-a .ui-content-a .ui-field-contain-a .ui-body-a .ui-br-a {
+.ui-mobile body .ui-mobile-viewport .ui-overlay-a .ui-page-a .ui-body-a .ui-page-active-a .ui-content-a .ui-field-contain-a .ui-body-a .ui-br-a {
 	background-color: #6A4A3C;
 	color: #EB6841;
 	font-family: Verdana, Trebuchet, Arial;
 }
 
-.ui-mobile-viewport .ui-overlay-b .ui-page .ui-body-b .ui-page-active .ui-content .ui-field-contain .ui-body .ui-br {
+.ui-overlay-b .ui-page .ui-body-b .ui-page-active .ui-content .ui-field-contain .ui-body .ui-br {
 	background-color: #6A4A3C;
 	color: #EB6841;
 	font-family: Verdana, Trebuchet, Arial;
