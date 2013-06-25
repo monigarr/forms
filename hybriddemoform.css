@@ -231,7 +231,7 @@ button#submit {
 
 /* CUSTOM JQM */
 
-.ui-mobile-viewport .ui-overlay-a .ui-page .ui-body-a .ui-page-active .ui-content .ui-field-contain .ui-body .ui-br {
+.ui-mobile-viewport-a .ui-overlay-a .ui-page-a .ui-body-a .ui-page-active-a .ui-content-a .ui-field-contain-a .ui-body-a .ui-br-a {
 	background-color: #6A4A3C;
 	color: #EB6841;
 	font-family: Verdana, Trebuchet, Arial;
