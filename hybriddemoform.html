@@ -1,68 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-	  	<title>Project Added! :: Hybrid Demo :: MDF3 :: Project 3 :: Monica Peters</title>
+  	<title>Project Added! :: Hybrid Demo :: MDF3 :: Project 3 :: Monica Peters</title>
 
-		<meta type="charset" content="utf-8" />
-		<meta type="robots" content="index,follow" />
-		<meta type="description" content="hybrid demo java android app uses parse.com and html5 form in webview to add links to main view" />
-		<meta type="keywords" content="monica peters, mdf3, hybrid demo, mobile app, java, android, html5, css3, javascript, camera" />		
-		<!--  Mobile viewport optimized: j.mp/bplateviewport -->
-		<meta name="HandheldFriendly" content="True" />
-		<meta name="MobileOptimized" content="320" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+	<meta type="charset" content="utf-8" />
+	<meta type="robots" content="index,follow" />
+	<meta type="description" content="hybrid demo java android app uses parse.com and html5 form in webview to add links to main view" />
+	<meta type="keywords" content="monica peters, mdf3, hybrid demo, mobile app, java, android, html5, css3, javascript, camera" />		
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="MobileOptimized" content="320" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script type="text/javascript" charset="utf-8" src="http://www.monicalamb.com/javascripts/modernizr.custom.min.js"></script>
+	<!--script type="text/javascript" charset="utf-8" src="http://www.monicalamb.com/javascripts/cordova-1.8.1.js"></script-->
 	
-		<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
-		<script type="text/javascript" charset="utf-8" src="http://www.monicalamb.com/javascripts/modernizr.custom.min.js"></script>
-		<!--script type="text/javascript" charset="utf-8" src="http://www.monicalamb.com/javascripts/cordova-1.8.1.js"></script-->
-		
-		<!-- Monica's custom style sheet-->
-		<!-- call custom style sheets last when using jqmobile -->
-		<link rel="stylesheet" href="http://monigarr.github.io/forms/hybriddemoform.css" />
-        	<!--link rel="stylesheet" href="http://monigarr.github.io/forms/hybriddemojqmobile.css" /-->
-        	<link rel="stylesheet" href="http://www.monicalamb.com/css/jquery.mobile.min.css" />
+	<!-- Monica's custom style sheet-->
+	<!-- call custom style sheets last when using jqmobile -->
+	<link rel="stylesheet" href="http://monigarr.github.io/forms/hybriddemoform.css" />
+	<!--link rel="stylesheet" href="http://monigarr.github.io/forms/hybriddemojqmobile.css" /-->
+	<link rel="stylesheet" href="http://www.monicalamb.com/css/jquery.mobile.min.css" />
 </head>
 <body>
 	<div data-role="page" data-theme="a">
 		<div data-role="content">	
-        	<!--show thanks page after form submitted-->
-			<form action="http://monigarr.github.io/forms/hybriddemoform.html" method="post" name="addprojectform" id="addprojectform">
 			<div id="projectinfo" data-role="fieldcontain">
-            		<fieldset>
+        		<fieldset>
+        		<!--show thanks page after form submitted-->
+        		<form action="http://monigarr.github.io/forms/hybriddemoform.html" method="post" name="addprojectform" id="addprojectform">
+
 				<legend><h3 id="formtitle">ADD PROJECT INFO</h3></legend>
                 
 				<div data-role="fieldcontain">
 					<label for="project_name">Project Name:</label>
-					<input type="text" name="project_name" id="project_name" placeholder="Operation Green" class="required" value="Project Name" />
+					<input type="text" name="project_name" id="project_name" placeholder="Operation Green" class="required" value="Project Name" /><br />
 				
 					<label for="project_url">Project URL:</label>
-					<input type="url" name="project_url" id="project_url" placeholder="http://www.website.com" class="required" />
+					<input type="url" name="project_url" id="project_url" placeholder="http://www.website.com" class="required" /><br />
 				
 					<label for="project_notes">Project Notes:</label>
-					<input type="text" name="project_notes" id="project_notes" placeholder="Description" class="required" value="This project is Awesome!"/>
+					<input type="text" name="project_notes" id="project_notes" placeholder="Description" class="required" value="This project is Awesome!"/><br />
                     
-                    			<label for="client_phone">Client Phone:</label>
-					<input type="text" name="client_phone" id="client_phone" placeholder="315-123-1234" class="required" value="315-600-3351"/>
+        			<label for="client_phone">Client Phone:</label>
+					<input type="text" name="client_phone" id="client_phone" placeholder="315-123-1234" class="required" value="315-600-3351"/><br />
                     
-                    			<label for="client_email">Client Email:</label>
-					<input type="email" name="client_email" id="client_email" placeholder="client@website.com" class="required" value="admin@SeawayWebSite.com"/>
+        			<label for="client_email">Client Email:</label>
+					<input type="email" name="client_email" id="client_email" placeholder="client@website.com" class="required" value="admin@SeawayWebSite.com"/><br />
                 
-                <a href="#" title="Camera Snapshot"><img height="38" width="60" id="myImage" align="left" valign="center" /></a>
-                <button id="camera" value="Camera" data-theme="a" onclick="captureImage();" /><br />
-                <button id="submit" value="Submit" data-theme="a" />
-                </form>
-		</div><!-- /fieldcontain-->
-	</fieldset>
+	                <a href="#" title="Camera Snapshot"><img height="38" width="60" id="myImage" align="left" valign="center" /></a><br />
+	                <button id="camera" value="Camera" data-theme="a" onclick="captureImage();" /><br />
+	                <button id="submit" value="Submit" data-theme="a" />
+                </div><!-- /fieldcontain-->
+        	</form>
+			</fieldset>
+		</div><!-- /projectinfo /fieldcontain-->
 	</div><!-- /content -->
 </div><!-- /page -->
-    <!--jquery and jquery mobile-->
-	<!--note that order of js is important below-->
-    <script type="text/javascript" charset="utf-8" src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
-    
-    <script type="text/javascript" charset="utf-8" src="http://www.parsecdn.com/js/parse-1.2.8.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="http://www.monicalamb.com/javascripts/mdf3_week4.js"></script>
-    <script type="text/javascript" charset="utf-8" src="http://www.monicalamb.com/javascripts/camera.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://github.com/monigarr/AVF/blob/master/week4/js/capture.js"></script>
+
+<!--jquery and jquery mobile-->
+	<!--note order of js is important below-->
+	<script type="text/javascript" charset="utf-8" src="http://code.jquery.com/jquery-1.8.2.min.js" />
+	<script type="text/javascript" charset="utf-8" src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js" />
+	<script type="text/javascript" charset="utf-8" src="http://www.parsecdn.com/js/parse-1.2.8.min.js" />
+	<script type="text/javascript" charset="utf-8" src="http://www.monicalamb.com/javascripts/mdf3_week4.js" />
+	<script type="text/javascript" charset="utf-8" src="http://www.monicalamb.com/javascripts/camera.js" />
+	<script type="text/javascript" charset="utf-8" src="https://github.com/monigarr/AVF/blob/master/week4/js/capture.js" />
 </body>
 </html>
